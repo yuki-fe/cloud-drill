@@ -1,0 +1,17 @@
+{
+  "site_name": "クラウド用語ドリル",
+  "tagline": "AWS 認定クラウドプラクティショナー（CLF-C02）の用語を無料で覚える単語帳",
+  "description": "AWS 認定クラウドプラクティショナー（CLF-C02）の用語とサービスを、カード・4択クイズ・書いて答える問題・分野別ミニテスト・略語クイズで覚えられる無料の単語帳サイトです。クラウドが初めての人にも分かるやさしい説明の解説ページもあります。",
+  "base_url": "https://cloud.yogo-drill.com",
+  "sisters": [
+    {"name": "ITパスポート用語ドリル", "url": "https://ip.yogo-drill.com", "desc": "ITパスポート試験の用語"},
+    {"name": "FE用語ドリル", "url": "https://fe.yogo-drill.com", "desc": "基本情報技術者試験の用語とプログラムの問題"}
+  ],
+  "operator": "Yuki-fe",
+  "contact": "https://forms.gle/s4yB1xMbcoRqZps2A",
+  "established": "2026-10-13",
+  "google_analytics_id": "",
+  "adsense_client": "",
+  "amazon_associate": false,
+  "affiliate_html": ""
+}
