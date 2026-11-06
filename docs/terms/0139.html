@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>NAT ゲートウェイとは？意味をわかりやすく｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル</title>
-<meta name="description" content="NAT ゲートウェイ（テクノロジーとサービス・ネットワーク）: プライベートサブネットのサーバーが、外から入られずにインターネットへ出ていけるようにする仕組み。">
+<title>NAT ゲートウェイとは？意味と覚え方｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル</title>
+<meta name="description" content="NAT ゲートウェイ（テクノロジーとサービス・ネットワーク）: プライベートサブネットのサーバーが、外から入られずにインターネットへ出ていけるようにする仕組み。【覚え方】「出口専用の回転ドア」と覚えます。中（プライベートサブネット）からは…">
 <link rel="canonical" href="https://cloud.yogo-drill.com/terms/0139.html">
 <meta property="og:type" content="article">
-<meta property="og:title" content="NAT ゲートウェイとは？意味をわかりやすく｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル">
-<meta property="og:description" content="NAT ゲートウェイ（テクノロジーとサービス・ネットワーク）: プライベートサブネットのサーバーが、外から入られずにインターネットへ出ていけるようにする仕組み。">
+<meta property="og:title" content="NAT ゲートウェイとは？意味と覚え方｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル">
+<meta property="og:description" content="NAT ゲートウェイ（テクノロジーとサービス・ネットワーク）: プライベートサブネットのサーバーが、外から入られずにインターネットへ出ていけるようにする仕組み。【覚え方】「出口専用の回転ドア」と覚えます。中（プライベートサブネット）からは…">
 <meta property="og:url" content="https://cloud.yogo-drill.com/terms/0139.html">
 <meta property="og:site_name" content="クラウド用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,7 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
-      
+      <section class="detail"><h2>覚え方</h2><p>「出口専用の回転ドア」と覚えます。中（プライベートサブネット）からは外へ出られますが、外からその扉を通って中へ入ってくることはできません。</p></section><section class="detail"><h2>試験での出され方</h2><p>「プライベートサブネットの EC2 が、ソフトの更新のためにインターネットへアクセスしたい。ただし外からはアクセスされたくない」という場面で選ぶ答えとして出ます。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0138.html">インターネットゲートウェイ</a>との違い</dt><dd>インターネットゲートウェイは、VPC とインターネットの行き来の出入口。NAT ゲートウェイは、中から外へ出るだけの通信を助ける。</dd><dt><a href="0149.html">AWS PrivateLink</a>との違い</dt><dd>AWS PrivateLink は、インターネットを通さずに AWS のサービスなどへつなぐ。NAT ゲートウェイは、インターネットへ出ていくための仕組み。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="2" data-term="インターネットゲートウェイ" data-href="0138.html">
     <h2>確認問題</h2>

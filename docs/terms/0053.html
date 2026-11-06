@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>アクセスキーとは？意味をわかりやすく｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル</title>
-<meta name="description" content="アクセスキー（セキュリティとコンプライアンス・アクセス管理）: プログラムや CLI から AWS を使うための、アクセスキー ID とシークレットアクセスキーの組。人に見せたり、コードに書いたりしない。">
+<title>アクセスキーとは？意味と覚え方｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル</title>
+<meta name="description" content="アクセスキー（セキュリティとコンプライアンス・アクセス管理）: プログラムや CLI から AWS を使うための、アクセスキー ID とシークレットアクセスキーの組。人に見せたり、コードに書いたりしない。【覚え方】「プログラム用の合鍵」と…">
 <link rel="canonical" href="https://cloud.yogo-drill.com/terms/0053.html">
 <meta property="og:type" content="article">
-<meta property="og:title" content="アクセスキーとは？意味をわかりやすく｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル">
-<meta property="og:description" content="アクセスキー（セキュリティとコンプライアンス・アクセス管理）: プログラムや CLI から AWS を使うための、アクセスキー ID とシークレットアクセスキーの組。人に見せたり、コードに書いたりしない。">
+<meta property="og:title" content="アクセスキーとは？意味と覚え方｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル">
+<meta property="og:description" content="アクセスキー（セキュリティとコンプライアンス・アクセス管理）: プログラムや CLI から AWS を使うための、アクセスキー ID とシークレットアクセスキーの組。人に見せたり、コードに書いたりしない。【覚え方】「プログラム用の合鍵」と…">
 <meta property="og:url" content="https://cloud.yogo-drill.com/terms/0053.html">
 <meta property="og:site_name" content="クラウド用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,7 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
-      
+      <section class="detail"><h2>覚え方</h2><p>「プログラム用の合鍵」と覚えます。人がコンソールに入るときはパスワード、プログラムや CLI から使うときはアクセスキーです。合鍵なので、人に見せない・置きっぱなしにしないことが大事です。</p></section><section class="detail"><h2>試験での出され方</h2><p>「アクセスキーの扱い方として正しいものはどれか」の形で出ます。コードに書かない、共有しない、定期的に切り替える、ルートユーザーのアクセスキーは作らない、が答えになります。EC2 上のアプリには、アクセスキーより IAM ロールを使うのが安全です。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0047.html">IAM ロール</a>との違い</dt><dd>IAM ロールは、一時的な認証情報が自動で発行されるので、長く使うアクセスキーを置かずにすむ。アクセスキーは長く使える認証情報。</dd><dt><a href="0060.html">AWS Secrets Manager</a>との違い</dt><dd>AWS Secrets Manager は、データベースのパスワードなどの秘密の情報を保管して自動で切り替える。アクセスキーは、AWS を使うための認証情報そのもの。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="1" data-term="カスタマー管理ポリシー" data-href="0050.html">
     <h2>確認問題</h2>

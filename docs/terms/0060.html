@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>AWS Secrets Managerとは？意味をわかりやすく｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル</title>
-<meta name="description" content="AWS Secrets Manager（セキュリティとコンプライアンス・アクセス管理）: データベースのパスワードや API キーなどの秘密の情報を安全に保管し、定期的に自動で切り替える（ローテーション）サービス。">
+<title>AWS Secrets Managerとは？意味と覚え方｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル</title>
+<meta name="description" content="AWS Secrets Manager（セキュリティとコンプライアンス・アクセス管理）: データベースのパスワードや API キーなどの秘密の情報を安全に保管し、定期的に自動で切り替える（ローテーション）サービス。【覚え方】「秘密（Sec…">
 <link rel="canonical" href="https://cloud.yogo-drill.com/terms/0060.html">
 <meta property="og:type" content="article">
-<meta property="og:title" content="AWS Secrets Managerとは？意味をわかりやすく｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル">
-<meta property="og:description" content="AWS Secrets Manager（セキュリティとコンプライアンス・アクセス管理）: データベースのパスワードや API キーなどの秘密の情報を安全に保管し、定期的に自動で切り替える（ローテーション）サービス。">
+<meta property="og:title" content="AWS Secrets Managerとは？意味と覚え方｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル">
+<meta property="og:description" content="AWS Secrets Manager（セキュリティとコンプライアンス・アクセス管理）: データベースのパスワードや API キーなどの秘密の情報を安全に保管し、定期的に自動で切り替える（ローテーション）サービス。【覚え方】「秘密（Sec…">
 <meta property="og:url" content="https://cloud.yogo-drill.com/terms/0060.html">
 <meta property="og:site_name" content="クラウド用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,7 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
-      
+      <section class="detail"><h2>覚え方</h2><p>「秘密（Secrets）の管理人（Manager）」と覚えます。パスワードを金庫に入れておき、合鍵を定期的に新しく作り替えてくれる管理人のようなサービスです。</p></section><section class="detail"><h2>試験での出され方</h2><p>「データベースの認証情報を安全に保管し、自動でローテーションしたい」という場面で選ぶサービスとして出ます。設定の値を保管できる Systems Manager の Parameter Store と並んで選択肢に出ることがあるので、「自動で切り替える」が決め手と覚えましょう。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0096.html">AWS Systems Manager</a>との違い</dt><dd>Systems Manager の Parameter Store も設定の値や秘密の情報を保管できる。秘密の情報を自動でローテーションしたいなら Secrets Manager。</dd><dt><a href="0072.html">AWS KMS</a>との違い</dt><dd>KMS は暗号化に使う「鍵」を作って管理するサービス。Secrets Manager はパスワードや API キーなどの「秘密の情報」そのものを保管する。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="1" data-term="SCP（サービスコントロールポリシー）" data-href="0062.html">
     <h2>確認問題</h2>
