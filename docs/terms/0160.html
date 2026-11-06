@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>S3 Standard-IAとは？意味と覚え方｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル</title>
-<meta name="description" content="S3 Standard-IA（テクノロジーとサービス・ストレージ）: あまり使わないが、必要なときはすぐ取り出したいデータ向けの S3 のストレージクラス。保存は安いが、取り出すときに料金がかかる。">
+<meta name="description" content="S3 Standard-IA（テクノロジーとサービス・ストレージ）: あまり使わないが、必要なときはすぐ取り出したいデータ向けの S3 のストレージクラス。保存は安いが、取り出すときに料金がかかる。【覚え方】IA は Infrequent…">
 <link rel="canonical" href="https://cloud.yogo-drill.com/terms/0160.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="S3 Standard-IAとは？意味と覚え方｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル">
-<meta property="og:description" content="S3 Standard-IA（テクノロジーとサービス・ストレージ）: あまり使わないが、必要なときはすぐ取り出したいデータ向けの S3 のストレージクラス。保存は安いが、取り出すときに料金がかかる。">
+<meta property="og:description" content="S3 Standard-IA（テクノロジーとサービス・ストレージ）: あまり使わないが、必要なときはすぐ取り出したいデータ向けの S3 のストレージクラス。保存は安いが、取り出すときに料金がかかる。【覚え方】IA は Infrequent…">
 <meta property="og:url" content="https://cloud.yogo-drill.com/terms/0160.html">
 <meta property="og:site_name" content="クラウド用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
+      <section class="detail"><h2>覚え方</h2><p>IA は Infrequent Access（たまにしか使わない）の略。「たまに使うが、使うときはすぐ必要」なデータ向けと覚えます。</p></section><section class="detail"><h2>試験での出され方</h2><p>「アクセスの頻度は低いが、必要なときはすぐに取り出したいデータ」に向くクラスとして出ます。バックアップなどがその例です。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0161.html">S3 One Zone-IA</a>との違い</dt><dd>S3 One Zone-IA は、1つのアベイラビリティーゾーンだけに保存する。Standard-IA は、複数のアベイラビリティーゾーンに保存する。</dd><dt><a href="0158.html">S3 Standard</a>との違い</dt><dd>S3 Standard は、よく使うデータ向けで、取り出しの料金がかからない。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="1" data-term="Amazon S3 Glacier" data-href="0162.html">
     <h2>確認問題</h2>
@@ -71,6 +72,7 @@
         <h2>同じ分野の用語</h2>
         <ul class="related"><li><a href="0159.html">S3 Intelligent-Tiering</a><p>使われ方に合わせて、データを自動で安いクラスへ移す S3 のストレージクラス。使われ方がわからないデータに向く。</p></li><li><a href="0161.html">S3 One Zone-IA</a><p>1つのアベイラビリティーゾーンだけに保存する、あまり使わないデータ向けのクラス。安いが、その AZ が壊れると失われることがあるので、作り直せるデータに使う。</p></li><li><a href="0158.html">S3 Standard</a><p>よく使うデータ向けの、標準の S3 のストレージクラス。</p></li><li><a href="0162.html">Amazon S3 Glacier</a><p>長く保存しておく（アーカイブ）データ向けの、とても安い S3 のストレージクラスの仲間。Instant Retrieval・Flexible Retrieval・Deep Archive があり、取り出しの速さと料金が違う。</p></li><li><a href="0157.html">S3 ストレージクラス</a><p>S3 の保存の種類。どれくらいよく使うか、どれくらい速く取り出す必要があるかで選び、料金を下げる。</p></li><li><a href="0163.html">S3 Glacier Deep Archive</a><p>S3 でいちばん安いストレージクラス。取り出しには時間がかかる。何年も保存しておく記録向け。</p></li></ul>
       </section>
+      <section class="side-card"><h2>比べて覚える</h2><ul class="b-links"><li><a href="../compare/s3-storage-classes.html">S3 のストレージクラスの違い（Standard・Standard-IA・One Zone-IA・Glacier Deep Archive）</a></li></ul></section>
     </aside>
   </div>
 </div>

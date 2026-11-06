@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>ネットワーク ACLとは？意味と覚え方｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル</title>
-<meta name="description" content="ネットワーク ACL（テクノロジーとサービス・ネットワーク）: サブネットの単位で付けるファイアウォール。許可と拒否の両方のルールを書け、行きと戻りの通信を別々に決める（ステートレス）。">
+<meta name="description" content="ネットワーク ACL（テクノロジーとサービス・ネットワーク）: サブネットの単位で付けるファイアウォール。許可と拒否の両方のルールを書け、行きと戻りの通信を別々に決める（ステートレス）。【覚え方】ACL は Access Control …">
 <link rel="canonical" href="https://cloud.yogo-drill.com/terms/0141.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ネットワーク ACLとは？意味と覚え方｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル">
-<meta property="og:description" content="ネットワーク ACL（テクノロジーとサービス・ネットワーク）: サブネットの単位で付けるファイアウォール。許可と拒否の両方のルールを書け、行きと戻りの通信を別々に決める（ステートレス）。">
+<meta property="og:description" content="ネットワーク ACL（テクノロジーとサービス・ネットワーク）: サブネットの単位で付けるファイアウォール。許可と拒否の両方のルールを書け、行きと戻りの通信を別々に決める（ステートレス）。【覚え方】ACL は Access Control …">
 <meta property="og:url" content="https://cloud.yogo-drill.com/terms/0141.html">
 <meta property="og:site_name" content="クラウド用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../abbr.html">略語クイズに挑戦</a>
       </div>
+      <section class="detail"><h2>覚え方</h2><p>ACL は Access Control List（アクセスを決めるリスト）。「サブネットの入口の警備」と覚えます。許可と拒否を書け、行きと戻りの通信を別々にチェックします（ステートレス）。</p></section><section class="detail"><h2>試験での出され方</h2><p>「サブネットのレベルで動作する」「ステートレスな」ファイアウォールはどれか、や「特定の IP アドレスからの通信を拒否したい」の答えとして出ます。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0140.html">セキュリティグループ</a>との違い</dt><dd>セキュリティグループはインスタンスの単位で付け、許可だけを書く。行きを許可すれば戻りも通る（ステートフル）。</dd><dt><a href="0063.html">AWS WAF</a>との違い</dt><dd>AWS WAF は、Web のリクエストの中身まで見て攻撃を止める。ネットワーク ACL は、IP アドレスやポートで通信を決める。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="1" data-term="AWS Direct Connect" data-href="0144.html">
     <h2>確認問題</h2>
@@ -71,6 +72,7 @@
         <h2>同じ分野の用語</h2>
         <ul class="related"><li><a href="0140.html">セキュリティグループ</a><p>EC2 などに付ける仮想のファイアウォール。許可する通信だけを決める。行きの通信を許すと、戻りの通信も自動で許される（ステートフル）。</p></li><li><a href="0142.html">Amazon Route 53</a><p>AWS の DNS のサービス。ドメイン名の登録、名前から IP アドレスへの変換、通信の振り分けを行う。</p></li><li><a href="0139.html">NAT ゲートウェイ</a><p>プライベートサブネットのサーバーが、外から入られずにインターネットへ出ていけるようにする仕組み。</p></li><li><a href="0143.html">Amazon CloudFront</a><p>世界のエッジロケーションを使って、Web サイトや動画などを利用者の近くから速く届けるサービス（CDN）。</p></li><li><a href="0138.html">インターネットゲートウェイ</a><p>VPC とインターネットをつなぐ出入口。</p></li><li><a href="0144.html">AWS Direct Connect</a><p>自社のデータセンターと AWS を、インターネットを通らない専用の線でつなぐサービス。通信が安定していて速い。</p></li></ul>
       </section>
+      <section class="side-card"><h2>比べて覚える</h2><ul class="b-links"><li><a href="../compare/security-group-nacl.html">セキュリティグループとネットワーク ACL の違い</a></li></ul></section>
     </aside>
   </div>
 </div>

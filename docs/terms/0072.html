@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>AWS KMSとは？意味と覚え方｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル</title>
-<meta name="description" content="AWS KMS（セキュリティとコンプライアンス・保護と検知）: データを暗号化するための鍵を作って管理するサービス。多くの AWS のサービスの暗号化と連携する。">
+<meta name="description" content="AWS KMS（セキュリティとコンプライアンス・保護と検知）: データを暗号化するための鍵を作って管理するサービス。多くの AWS のサービスの暗号化と連携する。【覚え方】KMS は Key Management Service の略で、…">
 <link rel="canonical" href="https://cloud.yogo-drill.com/terms/0072.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="AWS KMSとは？意味と覚え方｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル">
-<meta property="og:description" content="AWS KMS（セキュリティとコンプライアンス・保護と検知）: データを暗号化するための鍵を作って管理するサービス。多くの AWS のサービスの暗号化と連携する。">
+<meta property="og:description" content="AWS KMS（セキュリティとコンプライアンス・保護と検知）: データを暗号化するための鍵を作って管理するサービス。多くの AWS のサービスの暗号化と連携する。【覚え方】KMS は Key Management Service の略で、…">
 <meta property="og:url" content="https://cloud.yogo-drill.com/terms/0072.html">
 <meta property="og:site_name" content="クラウド用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../abbr.html">略語クイズに挑戦</a>
       </div>
+      <section class="detail"><h2>覚え方</h2><p>KMS は Key Management Service の略で、「鍵の管理」と名前どおりに覚えます。データを暗号化する鍵を作って管理し、S3・EBS・RDS など多くのサービスの暗号化とつながります。</p></section><section class="detail"><h2>試験での出され方</h2><p>「保存しているデータを暗号化するための鍵を、作成・管理するサービスはどれか」の答えとしてよく出ます。保存時の暗号化の話題で KMS が出てくることが多いです。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0073.html">AWS CloudHSM</a>との違い</dt><dd>AWS CloudHSM は自分専用のハードウェア（HSM）で、鍵を自分だけで管理する。KMS は AWS が管理する仕組みで、手軽に使える。</dd><dt><a href="0074.html">AWS Certificate Manager（ACM）</a>との違い</dt><dd>AWS Certificate Manager（ACM）は、Web サイトの通信を暗号化する SSL/TLS 証明書を扱う。KMS は暗号化の鍵を扱う。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="2" data-term="AWS CloudHSM" data-href="0073.html">
     <h2>確認問題</h2>
@@ -71,6 +72,7 @@
         <h2>同じ分野の用語</h2>
         <ul class="related"><li><a href="0071.html">AWS Security Hub</a><p>GuardDuty・Inspector・Macie などの結果を1か所に集め、セキュリティの状態をまとめて確かめるサービス。</p></li><li><a href="0073.html">AWS CloudHSM</a><p>専用のハードウェア（HSM）で、暗号化の鍵を管理するサービス。鍵を自分だけで管理しなければならないときに使う。</p></li><li><a href="0070.html">Amazon Detective</a><p>セキュリティの問題が見つかったときに、ログをもとに原因や影響の範囲を調べるのを助けるサービス。</p></li><li><a href="0074.html">AWS Certificate Manager（ACM）</a><p>Web サイトの通信を暗号化する SSL/TLS 証明書を発行・更新するサービス。ロードバランサーや CloudFront と組み合わせる公開証明書は、追加料金なしで使える。</p></li><li><a href="0069.html">Amazon Macie</a><p>S3 に保存されたデータの中から、個人情報などの大事なデータを機械学習で見つけて知らせるサービス。</p></li><li><a href="0075.html">保存時の暗号化</a><p>ディスクやデータベースに保存しているデータを暗号化すること。S3・EBS・RDS などで使える。</p></li></ul>
       </section>
+      <section class="side-card"><h2>比べて覚える</h2><ul class="b-links"><li><a href="../compare/kms-cloudhsm.html">AWS KMS と AWS CloudHSM の違い</a></li></ul></section>
     </aside>
   </div>
 </div>

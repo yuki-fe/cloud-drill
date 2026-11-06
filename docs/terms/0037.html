@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>責任共有モデルとは？意味と覚え方｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル</title>
-<meta name="description" content="責任共有モデル（セキュリティとコンプライアンス・責任共有モデル）: セキュリティの責任を AWS と利用者で分ける考え方。AWS は「クラウドのセキュリティ」、利用者は「クラウドにおけるセキュリティ」を受け持つ。">
+<meta name="description" content="責任共有モデル（セキュリティとコンプライアンス・責任共有モデル）: セキュリティの責任を AWS と利用者で分ける考え方。AWS は「クラウドのセキュリティ」、利用者は「クラウドにおけるセキュリティ」を受け持つ。【覚え方】「AWS は建物…">
 <link rel="canonical" href="https://cloud.yogo-drill.com/terms/0037.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="責任共有モデルとは？意味と覚え方｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル">
-<meta property="og:description" content="責任共有モデル（セキュリティとコンプライアンス・責任共有モデル）: セキュリティの責任を AWS と利用者で分ける考え方。AWS は「クラウドのセキュリティ」、利用者は「クラウドにおけるセキュリティ」を受け持つ。">
+<meta property="og:description" content="責任共有モデル（セキュリティとコンプライアンス・責任共有モデル）: セキュリティの責任を AWS と利用者で分ける考え方。AWS は「クラウドのセキュリティ」、利用者は「クラウドにおけるセキュリティ」を受け持つ。【覚え方】「AWS は建物…">
 <meta property="og:url" content="https://cloud.yogo-drill.com/terms/0037.html">
 <meta property="og:site_name" content="クラウド用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
+      <section class="detail"><h2>覚え方</h2><p>「AWS は建物、利用者は部屋の中」と覚えます。AWS はデータセンターや機器など「クラウドのセキュリティ」を、利用者はデータやアクセスの設定など「クラウドにおけるセキュリティ」を受け持ちます。</p></section><section class="detail"><h2>試験での出され方</h2><p>「責任共有モデルで、利用者の責任はどれか」「AWS の責任はどれか」を選ぶ問題がよく出ます。データセンターの物理的な警備は AWS、データの暗号化や IAM・セキュリティグループの設定は利用者、と分けて考えます。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0038.html">クラウドのセキュリティ</a>との違い</dt><dd>「クラウドのセキュリティ」は、責任共有モデルのうち AWS が受け持つ側のこと。</dd><dt><a href="0039.html">クラウドにおけるセキュリティ</a>との違い</dt><dd>「クラウドにおけるセキュリティ」は、利用者が受け持つ側のこと。データ・設定・EC2 の OS の更新などが入る。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="3" data-term="共通の統制" data-href="0040.html">
     <h2>確認問題</h2>
@@ -71,6 +72,7 @@
         <h2>同じ分野の用語</h2>
         <ul class="related"><li><a href="0038.html">クラウドのセキュリティ</a><p>責任共有モデルで AWS が受け持つ範囲。データセンターの建物・機器・ネットワーク・仮想化の仕組みなど、サービスを動かす土台を守る。</p></li><li><a href="0039.html">クラウドにおけるセキュリティ</a><p>責任共有モデルで利用者が受け持つ範囲。データ、アクセスの設定、ファイアウォールの設定、暗号化、EC2 なら OS の更新など。</p></li><li><a href="0040.html">共通の統制</a><p>AWS と利用者の両方が、それぞれの範囲で行う管理。パッチの管理・設定の管理・セキュリティの教育など。</p></li><li><a href="0041.html">サービスによる責任の違い</a><p>利用者の責任の範囲は、使うサービスで変わること。EC2 では OS の更新も利用者の責任だが、RDS や Lambda では OS の管理を AWS が受け持つ。</p></li></ul>
       </section>
+      
     </aside>
   </div>
 </div>

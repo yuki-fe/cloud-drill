@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>似た用語の違い（15組）｜AWS 認定クラウドプラクティショナー｜クラウド用語ドリル</title>
+<meta name="description" content="AWS 認定クラウドプラクティショナー（CLF-C02）でまぎらわしい用語15組（S3とEBSとEFS、セキュリティグループとネットワーク ACL など）の違いを、表で比べてまとめました。">
+<link rel="canonical" href="https://cloud.yogo-drill.com/compare/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="似た用語の違い（15組）｜AWS 認定クラウドプラクティショナー｜クラウド用語ドリル">
+<meta property="og:description" content="AWS 認定クラウドプラクティショナー（CLF-C02）でまぎらわしい用語15組（S3とEBSとEFS、セキュリティグループとネットワーク ACL など）の違いを、表で比べてまとめました。">
+<meta property="og:url" content="https://cloud.yogo-drill.com/compare/index.html">
+<meta property="og:site_name" content="クラウド用語ドリル">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/layout.css">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-33X7PQ3Y7Q"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-33X7PQ3Y7Q');</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://cloud.yogo-drill.com/"}, {"@type": "ListItem", "position": 2, "name": "似た用語の違い", "item": "https://cloud.yogo-drill.com/compare/index.html"}]}</script>
+</head>
+<body class="" data-root="../">
+<a class="skip" href="#content">本文へ移動</a>
+<header class="site-head">
+  <div class="site-head-in">
+    <a class="brand" href="../index.html"><img src="../favicon.svg" alt="" width="28" height="28">クラウド用語ドリル</a>
+    <nav class="site-nav" aria-label="サイト内">
+      <a href="../index.html">用語ドリル</a><a href="../test.html">ミニテスト</a><a href="../abbr.html">略語</a><a href="../terms/index.html">用語一覧</a><a href="../typing.html">タイピング</a><a href="../about.html">このサイトについて</a>
+    </nav>
+  </div>
+</header>
+<div id="content"></div>
+
+<main class="prose wide">
+  <nav class="crumbs" aria-label="パンくずリスト"><a href="../index.html">ホーム</a><span>›</span><span>似た用語を比べる</span></nav>
+  <h1>似た用語の違い<small>AWS 認定クラウドプラクティショナーでまぎらわしい用語 15組</small></h1>
+  <p>試験では、役割の似たサービスや用語の中から、場面に合うものを選ぶ問題がよく出ます。2つ（3つ以上）の用語を表で並べて、どこが違うかを確かめましょう。</p>
+  <ul class="term-list"><li><a href="s3-ebs-efs.html">S3とEBSとEFSの違い</a><p>S3はファイルを名前を付けて置いておく「倉庫」（オブジェクトストレージ）、EBSは1台のEC2につなぐ「ディスク」（ブロックストレージ）、EFSは複数のEC2から同時に使える「共有フォルダ」（ファイルストレージ）です。</p></li><li><a href="security-group-nacl.html">セキュリティグループとネットワーク ACL の違い</a><p>どちらも VPC の中で通信を通すか決めるファイアウォールです。セキュリティグループは EC2 などの1台ごと（インスタンス単位）、ネットワーク ACL はサブネットごとに付けます。</p></li><li><a href="region-az-edge-location.html">リージョンとアベイラビリティーゾーンとエッジロケーションの違い</a><p>リージョンは世界の地域、アベイラビリティーゾーン（AZ）はリージョンの中にある独立したデータセンターの集まり、エッジロケーションは利用者の近くでデータを速く届けるための拠点です。</p></li><li><a href="ec2-pricing-models.html">オンデマンドとリザーブドインスタンスとスポットインスタンスと Savings Plans の違い</a><p>EC2 の買い方の違いです。約束なしで使った分だけ払うのがオンデマンド、1年か3年の約束で安くするのがリザーブドインスタンスと Savings Plans、余っている EC2 を中断ありで安く使うのがスポットインスタンスです。</p></li><li><a href="cloudtrail-cloudwatch-config.html">CloudTrail と CloudWatch と Config の違い</a><p>CloudTrail は「だれが何をしたか」の操作の記録、CloudWatch は「今どんな状態か」の監視とアラーム、Config は「資源の設定がどうなっているか・どう変わったか」の記録とルールの確認です。</p></li><li><a href="iam-user-group-role.html">IAM ユーザーと IAM グループと IAM ロールの違い</a><p>IAM ユーザーは人やアプリごとの ID、IAM グループはユーザーをまとめて同じ権限を付けるための入れ物、IAM ロールは一時的に権限を借りるための ID です。権限そのものは IAM ポリシーで決めます。</p></li><li><a href="guardduty-inspector-macie.html">GuardDuty と Inspector と Macie と Detective の違い</a><p>GuardDuty は不正なアクセスやあやしい動きを見つけ、Inspector はソフトウェアの脆弱性を調べ、Macie は S3 の中の個人情報などを見つけ、Detective は見つかった問題の原因を調べるのを助けます。</p></li><li><a href="shield-waf.html">AWS Shield と AWS WAF の違い</a><p>AWS Shield は大量の通信でサービスを止める DDoS 攻撃から守るサービス、AWS WAF は SQL インジェクションなど Web アプリをねらう攻撃を、決めたルールで止めるファイアウォールです。</p></li><li><a href="kms-cloudhsm.html">AWS KMS と AWS CloudHSM の違い</a><p>どちらも暗号化の鍵を管理するサービスです。KMS は AWS が管理する仕組みで手軽に使え、多くの AWS のサービスとつながります。CloudHSM は自分専用のハードウェア（HSM）で、鍵を自分だけで管理します。</p></li><li><a href="rds-aurora-dynamodb.html">RDS と Aurora と DynamoDB の違い</a><p>RDS は MySQL などのリレーショナルデータベースを AWS が管理してくれるサービス、Aurora は AWS がクラウド向けに作った高性能なリレーショナルデータベース、DynamoDB はキーと値で読み書きする NoSQL のデータベースです。</p></li><li><a href="direct-connect-vpn.html">AWS Direct Connect と AWS VPN の違い</a><p>どちらも会社のネットワークと AWS をつなぐサービスです。Direct Connect はインターネットを通らない専用の線、VPN はインターネットを通る暗号化した通信でつなぎます。</p></li><li><a href="budgets-cost-explorer-pricing-calculator.html">AWS Budgets と Cost Explorer と Pricing Calculator の違い</a><p>Pricing Calculator は使う前に料金を見積もる道具、Cost Explorer はこれまでの料金をグラフで分析する道具、AWS Budgets は予算を決めて超えそうなときに知らせるサービスです。</p></li><li><a href="sns-sqs.html">Amazon SNS と Amazon SQS の違い</a><p>SNS はメッセージを多くの受け取り先へ一斉に送る（通知する）サービス、SQS はメッセージを列（キュー）にためておき、受け取る側が自分の都合で取り出すサービスです。</p></li><li><a href="rehost-replatform-refactor.html">リホストとリプラットフォームとリファクタリングの違い</a><p>クラウドへの移し方の違いです。リホストはそのまま移す、リプラットフォームは一部だけクラウド向けに変えて移す、リファクタリングはクラウドの機能を生かすように大きく作り直して移します。</p></li><li><a href="s3-storage-classes.html">S3 のストレージクラスの違い（Standard・Standard-IA・One Zone-IA・Glacier Deep Archive）</a><p>S3 のストレージクラスは、どれくらいよく使うか、どれくらい速く取り出したいかで選びます。よく使うなら Standard、あまり使わないなら IA（Infrequent Access）、何年も保管するだけなら Glacier Deep Archive です。</p></li></ul>
+  <p><a href="../terms/index.html">用語一覧（248語）へ</a></p>
+</main>
+
+<footer class="site-foot">
+  <nav aria-label="フッター">
+    <a href="https://yogo-drill.com/">用語ドリル（ほかの資格のサイト）</a>
+    <a href="../terms/index.html">用語一覧</a>
+    <a href="../about.html">運営者情報</a>
+    <a href="../privacy.html">プライバシーポリシー・免責事項</a>
+  </nav>
+  <p>姉妹サイト: <a href="https://ip.yogo-drill.com/">ITパスポート用語ドリル</a>／<a href="https://fe.yogo-drill.com/">FE用語ドリル</a></p>
+  <p>Amazon Web Services、AWS、および関連する名称は、Amazon.com, Inc. またはその関連会社の商標です。当サイトは個人の学習サイトで、Amazon Web Services, Inc. およびその関連会社とは関係ありません。</p>
+  <p>© 2026 Yuki-fe</p>
+</footer>
+
+</body>
+</html>

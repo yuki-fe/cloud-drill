@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>IAM グループとは？意味と覚え方｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル</title>
-<meta name="description" content="IAM グループ（セキュリティとコンプライアンス・アクセス管理）: IAM ユーザーをまとめたもの。グループに権限を付けると、入っている全員に同じ権限が付く。">
+<meta name="description" content="IAM グループ（セキュリティとコンプライアンス・アクセス管理）: IAM ユーザーをまとめたもの。グループに権限を付けると、入っている全員に同じ権限が付く。【覚え方】「部署」と覚えます。「開発者」グループに権限を付けておけば、新しく入っ…">
 <link rel="canonical" href="https://cloud.yogo-drill.com/terms/0046.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="IAM グループとは？意味と覚え方｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル">
-<meta property="og:description" content="IAM グループ（セキュリティとコンプライアンス・アクセス管理）: IAM ユーザーをまとめたもの。グループに権限を付けると、入っている全員に同じ権限が付く。">
+<meta property="og:description" content="IAM グループ（セキュリティとコンプライアンス・アクセス管理）: IAM ユーザーをまとめたもの。グループに権限を付けると、入っている全員に同じ権限が付く。【覚え方】「部署」と覚えます。「開発者」グループに権限を付けておけば、新しく入っ…">
 <meta property="og:url" content="https://cloud.yogo-drill.com/terms/0046.html">
 <meta property="og:site_name" content="クラウド用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
+      <section class="detail"><h2>覚え方</h2><p>「部署」と覚えます。「開発者」グループに権限を付けておけば、新しく入った人をグループに入れるだけで、同じ権限がまとめて付きます。</p></section><section class="detail"><h2>試験での出され方</h2><p>「多くのユーザーに同じ権限を、手間なく付けるには」という場面で選ぶ答えとして出ます。グループの中にグループは入れられません。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0045.html">IAM ユーザー</a>との違い</dt><dd>IAM ユーザーは1人ごとの ID。IAM グループは、そのユーザーをまとめて権限を付けるためのもの。</dd><dt><a href="0047.html">IAM ロール</a>との違い</dt><dd>IAM ロールは、EC2 などのサービスや別のアカウントが一時的に引き受ける ID。グループはユーザーをまとめるだけ。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="0" data-term="ルートユーザーだけの作業" data-href="0044.html">
     <h2>確認問題</h2>
@@ -71,6 +72,7 @@
         <h2>同じ分野の用語</h2>
         <ul class="related"><li><a href="0045.html">IAM ユーザー</a><p>AWS を使う人やアプリごとに作る ID。パスワードやアクセスキーを持てる。</p></li><li><a href="0047.html">IAM ロール</a><p>一時的に権限を借りるための ID。EC2 などのサービスや、別のアカウントの利用者に、決まった権限を一時的に渡すときに使う。</p></li><li><a href="0044.html">ルートユーザーだけの作業</a><p>アカウントの設定の変更や、アカウントの解約など、ルートユーザーでしかできない一部の作業。</p></li><li><a href="0048.html">IAM ポリシー</a><p>「何に対して、何をしてよいか（してはいけないか）」を JSON で書いた権限の決まり。ユーザー・グループ・ロールに付ける。</p></li><li><a href="0043.html">ルートユーザー</a><p>AWS アカウントを作ったときのメールアドレスでログインする、すべての権限を持つユーザー。ふだんの作業には使わず、MFA を設定して守る。</p></li><li><a href="0049.html">AWS 管理ポリシー</a><p>AWS があらかじめ用意している IAM ポリシー。よくある使い方の権限を、すぐに付けられる。</p></li></ul>
       </section>
+      <section class="side-card"><h2>比べて覚える</h2><ul class="b-links"><li><a href="../compare/iam-user-group-role.html">IAM ユーザーと IAM グループと IAM ロールの違い</a></li></ul></section>
     </aside>
   </div>
 </div>

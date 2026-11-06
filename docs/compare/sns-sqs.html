@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Amazon SNS と Amazon SQS の違いを表で比較｜AWS 認定クラウドプラクティショナー｜クラウド用語ドリル</title>
+<meta name="description" content="SNS はメッセージを多くの受け取り先へ一斉に送る（通知する）サービス、SQS はメッセージを列（キュー）にためておき、受け取る側が自分の都合で取り出すサービスです。">
+<link rel="canonical" href="https://cloud.yogo-drill.com/compare/sns-sqs.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Amazon SNS と Amazon SQS の違いを表で比較｜AWS 認定クラウドプラクティショナー｜クラウド用語ドリル">
+<meta property="og:description" content="SNS はメッセージを多くの受け取り先へ一斉に送る（通知する）サービス、SQS はメッセージを列（キュー）にためておき、受け取る側が自分の都合で取り出すサービスです。">
+<meta property="og:url" content="https://cloud.yogo-drill.com/compare/sns-sqs.html">
+<meta property="og:site_name" content="クラウド用語ドリル">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/layout.css">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-33X7PQ3Y7Q"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-33X7PQ3Y7Q');</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://cloud.yogo-drill.com/"}, {"@type": "ListItem", "position": 2, "name": "似た用語の違い", "item": "https://cloud.yogo-drill.com/compare/index.html"}, {"@type": "ListItem", "position": 3, "name": "Amazon SNS と Amazon SQS の違い", "item": "https://cloud.yogo-drill.com/compare/sns-sqs.html"}]}</script>
+</head>
+<body class="" data-root="../">
+<a class="skip" href="#content">本文へ移動</a>
+<header class="site-head">
+  <div class="site-head-in">
+    <a class="brand" href="../index.html"><img src="../favicon.svg" alt="" width="28" height="28">クラウド用語ドリル</a>
+    <nav class="site-nav" aria-label="サイト内">
+      <a href="../index.html">用語ドリル</a><a href="../test.html">ミニテスト</a><a href="../abbr.html">略語</a><a href="../terms/index.html">用語一覧</a><a href="../typing.html">タイピング</a><a href="../about.html">このサイトについて</a>
+    </nav>
+  </div>
+</header>
+<div id="content"></div>
+
+<main class="prose">
+  <nav class="crumbs" aria-label="パンくずリスト"><a href="../index.html">ホーム</a><span>›</span><a href="index.html">似た用語の違い</a><span>›</span><span>Amazon SNS と Amazon SQS の違い</span></nav>
+  <p class="eyebrow">似た用語を比べる</p>
+  <h1>Amazon SNS と Amazon SQS の違い</h1>
+  <p class="lead">SNS はメッセージを多くの受け取り先へ一斉に送る（通知する）サービス、SQS はメッセージを列（キュー）にためておき、受け取る側が自分の都合で取り出すサービスです。</p>
+  <h2>表で比べる</h2>
+  <div class="table-scroll"><table class="cmp-table"><thead><tr><th scope="col">観点</th><th scope="col">Amazon SNS</th><th scope="col">Amazon SQS</th></tr></thead><tbody><tr><th scope="row">しくみ</th><td>送られたメッセージを、登録している受け取り先へ一斉に配る</td><td>メッセージをキューにためておく</td></tr><tr><th scope="row">受け取り方</th><td>SNS のほうから届ける（プッシュ）</td><td>受け取る側が取りに行く（ポーリング）</td></tr><tr><th scope="row">受け取る数</th><td>1つのメッセージを、たくさんの受け取り先へ</td><td>1つのメッセージは、ふつう1つの処理が受け取る</td></tr><tr><th scope="row">受け取り先</th><td>メール・SMS・アプリ・Lambda・SQS など</td><td>アプリ（EC2 や Lambda など）</td></tr><tr><th scope="row">たとえ</th><td>校内放送</td><td>銀行の番号札の順番待ち</td></tr></tbody></table></div>
+  <h2>見分けるポイント</h2>
+  <ul><li>「通知」「一斉に送る」「メールや SMS」「パブリッシュ／サブスクライブ」なら SNS</li><li>「キュー」「メッセージをためる」「アプリどうしを切り離す（疎結合）」なら SQS</li><li>受け取る側が止まっていても、SQS ならメッセージはキューに残って待てる</li><li>SNS で一斉に送り、それぞれを SQS で受けてためる組み合わせもある</li></ul>
+  <h2>試験での出され方</h2>
+  <p>「アプリケーションの部品どうしを疎結合にしたい」なら SQS、「システムの異常を担当者にメールで通知したい」なら SNS のように、目的から選ぶ問題がよく出ます。</p>
+  <h2>それぞれの用語</h2>
+  <ul class="term-list"><li><a href="../terms/0190.html">Amazon SNS</a><p>メッセージを、メール・SMS・アプリなど多くの受け取り先へ一斉に送る（通知する）サービス。</p></li><li><a href="../terms/0191.html">Amazon SQS</a><p>メッセージを順番待ちの列（キュー）にためて、アプリどうしを切り離してやり取りさせるサービス。</p></li></ul>
+  <div class="cta-row">
+    <a class="btn primary" href="../index.html#quiz"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>4択クイズで確かめる</a>
+    <a class="btn" href="../index.html#card">カードで練習</a>
+  </div>
+  
+  <h2>ほかの比べる用語</h2>
+  <ul class="b-links inline"><li><a href="s3-ebs-efs.html">S3とEBSとEFSの違い</a></li><li><a href="security-group-nacl.html">セキュリティグループとネットワーク ACL の違い</a></li><li><a href="region-az-edge-location.html">リージョンとアベイラビリティーゾーンとエッジロケーションの違い</a></li><li><a href="ec2-pricing-models.html">オンデマンドとリザーブドインスタンスとスポットインスタンスと Savings Plans の違い</a></li><li><a href="cloudtrail-cloudwatch-config.html">CloudTrail と CloudWatch と Config の違い</a></li><li><a href="iam-user-group-role.html">IAM ユーザーと IAM グループと IAM ロールの違い</a></li><li><a href="guardduty-inspector-macie.html">GuardDuty と Inspector と Macie と Detective の違い</a></li><li><a href="shield-waf.html">AWS Shield と AWS WAF の違い</a></li><li><a href="kms-cloudhsm.html">AWS KMS と AWS CloudHSM の違い</a></li><li><a href="rds-aurora-dynamodb.html">RDS と Aurora と DynamoDB の違い</a></li><li><a href="direct-connect-vpn.html">AWS Direct Connect と AWS VPN の違い</a></li><li><a href="budgets-cost-explorer-pricing-calculator.html">AWS Budgets と Cost Explorer と Pricing Calculator の違い</a></li><li><a href="rehost-replatform-refactor.html">リホストとリプラットフォームとリファクタリングの違い</a></li><li><a href="s3-storage-classes.html">S3 のストレージクラスの違い（Standard・Standard-IA・One Zone-IA・Glacier Deep Archive）</a></li></ul>
+</main>
+
+<footer class="site-foot">
+  <nav aria-label="フッター">
+    <a href="https://yogo-drill.com/">用語ドリル（ほかの資格のサイト）</a>
+    <a href="../terms/index.html">用語一覧</a>
+    <a href="../about.html">運営者情報</a>
+    <a href="../privacy.html">プライバシーポリシー・免責事項</a>
+  </nav>
+  <p>姉妹サイト: <a href="https://ip.yogo-drill.com/">ITパスポート用語ドリル</a>／<a href="https://fe.yogo-drill.com/">FE用語ドリル</a></p>
+  <p>Amazon Web Services、AWS、および関連する名称は、Amazon.com, Inc. またはその関連会社の商標です。当サイトは個人の学習サイトで、Amazon Web Services, Inc. およびその関連会社とは関係ありません。</p>
+  <p>© 2026 Yuki-fe</p>
+</footer>
+
+</body>
+</html>

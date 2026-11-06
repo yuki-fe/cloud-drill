@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>リージョンとは？意味と覚え方｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル</title>
-<meta name="description" content="リージョン（テクノロジーとサービス・グローバルインフラ）: AWS のデータセンターが集まっている、世界の地域。データを置く国の決まり・利用者への近さ・料金・使えるサービスで選ぶ。">
+<meta name="description" content="リージョン（テクノロジーとサービス・グローバルインフラ）: AWS のデータセンターが集まっている、世界の地域。データを置く国の決まり・利用者への近さ・料金・使えるサービスで選ぶ。【覚え方】「東京」「大阪」のような、世界の地域と覚えます。…">
 <link rel="canonical" href="https://cloud.yogo-drill.com/terms/0097.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="リージョンとは？意味と覚え方｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル">
-<meta property="og:description" content="リージョン（テクノロジーとサービス・グローバルインフラ）: AWS のデータセンターが集まっている、世界の地域。データを置く国の決まり・利用者への近さ・料金・使えるサービスで選ぶ。">
+<meta property="og:description" content="リージョン（テクノロジーとサービス・グローバルインフラ）: AWS のデータセンターが集まっている、世界の地域。データを置く国の決まり・利用者への近さ・料金・使えるサービスで選ぶ。【覚え方】「東京」「大阪」のような、世界の地域と覚えます。…">
 <meta property="og:url" content="https://cloud.yogo-drill.com/terms/0097.html">
 <meta property="og:site_name" content="クラウド用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
+      <section class="detail"><h2>覚え方</h2><p>「東京」「大阪」のような、世界の地域と覚えます。リージョンの中にアベイラビリティーゾーンがあり、さらにその中にデータセンターがあります。</p></section><section class="detail"><h2>試験での出され方</h2><p>「リージョンを選ぶときに考えることはどれか」がよく出ます。データを置く国の法律（データ主権）、利用者への近さ、使えるサービス、料金の4つで覚えましょう。災害対策で別のリージョンにバックアップを置く話もよく出ます。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0098.html">アベイラビリティーゾーン（AZ）</a>との違い</dt><dd>アベイラビリティーゾーンは、リージョンの中にある独立したデータセンターの集まり。リージョンのほうが大きな単位。</dd><dt><a href="0099.html">エッジロケーション</a>との違い</dt><dd>エッジロケーションは、CloudFront などがデータを速く届けるために使う、利用者の近くの拠点。リージョンとは別のもの。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="0" data-term="AWS Outposts" data-href="0103.html">
     <h2>確認問題</h2>
@@ -71,6 +72,7 @@
         <h2>同じ分野の用語</h2>
         <ul class="related"><li><a href="0098.html">アベイラビリティーゾーン（AZ）</a><p>1つのリージョンの中にある、独立したデータセンターの集まり。電源やネットワークを別にしていて、同時に止まりにくい。複数の AZ に分けて置くと高可用性になる。</p></li><li><a href="0099.html">エッジロケーション</a><p>利用者の近くに置かれた拠点。CloudFront などがデータを一時的に保存（キャッシュ）して、速く届けるのに使う。</p></li><li><a href="0100.html">データ主権</a><p>データを、決まった国や地域の法律の下に置かなければならないという考え。データを置くリージョンを選んで対応する。</p></li><li><a href="0101.html">複数リージョンの利用</a><p>複数のリージョンにシステムを置くこと。災害対策、事業の継続、遠くの利用者への速さ、データ主権などのために使う。</p></li><li><a href="0102.html">単一障害点</a><p>そこが壊れるとシステム全体が止まってしまう部分。アベイラビリティーゾーンどうしは、単一障害点を共有しないように作られている。</p></li><li><a href="0103.html">AWS Outposts</a><p>AWS と同じ機器とサービスを、自社のデータセンターなどに置いて使えるようにするサービス。ハイブリッドで使う。</p></li></ul>
       </section>
+      <section class="side-card"><h2>比べて覚える</h2><ul class="b-links"><li><a href="../compare/region-az-edge-location.html">リージョンとアベイラビリティーゾーンとエッジロケーションの違い</a></li></ul></section>
     </aside>
   </div>
 </div>

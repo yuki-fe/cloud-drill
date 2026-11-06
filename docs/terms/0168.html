@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Amazon EFSとは？意味と覚え方｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル</title>
-<meta name="description" content="Amazon EFS（テクノロジーとサービス・ストレージ）: 複数の EC2 から同時に使える、容量が自動で増えるファイルストレージ。">
+<meta name="description" content="Amazon EFS（テクノロジーとサービス・ストレージ）: 複数の EC2 から同時に使える、容量が自動で増えるファイルストレージ。【覚え方】EFS は Elastic File System。「みんなで使う共有フォルダで、中身が増えれ…">
 <link rel="canonical" href="https://cloud.yogo-drill.com/terms/0168.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Amazon EFSとは？意味と覚え方｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル">
-<meta property="og:description" content="Amazon EFS（テクノロジーとサービス・ストレージ）: 複数の EC2 から同時に使える、容量が自動で増えるファイルストレージ。">
+<meta property="og:description" content="Amazon EFS（テクノロジーとサービス・ストレージ）: 複数の EC2 から同時に使える、容量が自動で増えるファイルストレージ。【覚え方】EFS は Elastic File System。「みんなで使う共有フォルダで、中身が増えれ…">
 <meta property="og:url" content="https://cloud.yogo-drill.com/terms/0168.html">
 <meta property="og:site_name" content="クラウド用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../abbr.html">略語クイズに挑戦</a>
       </div>
+      <section class="detail"><h2>覚え方</h2><p>EFS は Elastic File System。「みんなで使う共有フォルダで、中身が増えれば自動で広がる」と覚えます。複数の EC2 から同時に読み書きできます。</p></section><section class="detail"><h2>試験での出され方</h2><p>「複数の EC2 インスタンスから、同時に同じファイルにアクセスしたい」という場面で選ぶ答えとして出ます。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0165.html">Amazon EBS</a>との違い</dt><dd>Amazon EBS は、基本は1台の EC2 につなぐディスク。EFS は、複数の EC2 で共有できる。</dd><dt><a href="0155.html">Amazon S3</a>との違い</dt><dd>Amazon S3 はオブジェクトストレージで、ファイルシステムとしてマウントして使うものではない。EFS はファイルシステム。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="1" data-term="EBS スナップショット" data-href="0167.html">
     <h2>確認問題</h2>
@@ -71,6 +72,7 @@
         <h2>同じ分野の用語</h2>
         <ul class="related"><li><a href="0167.html">EBS スナップショット</a><p>EBS のある時点の状態を保存したバックアップ。</p></li><li><a href="0169.html">Amazon FSx</a><p>Windows File Server や Lustre など、よく使われるファイルシステムを、AWS が管理して提供するサービス。</p></li><li><a href="0166.html">インスタンスストア</a><p>EC2 の機器に直接ついている一時的なディスク。速いが、インスタンスを止めるとデータが消える。</p></li><li><a href="0170.html">AWS Storage Gateway</a><p>社内のシステムと AWS のストレージをつなぎ、よく使うデータは手元に置き（キャッシュ）ながら、AWS に保存するサービス。ハイブリッドで使う。</p></li><li><a href="0165.html">Amazon EBS</a><p>EC2 につないで使うブロックストレージ（ディスク）。EC2 を止めてもデータは残る。スナップショットでバックアップできる。</p></li><li><a href="0171.html">AWS Backup</a><p>多くの AWS のサービスのバックアップを、1か所でまとめて設定・管理するサービス。</p></li></ul>
       </section>
+      <section class="side-card"><h2>比べて覚える</h2><ul class="b-links"><li><a href="../compare/s3-ebs-efs.html">S3とEBSとEFSの違い</a></li></ul></section>
     </aside>
   </div>
 </div>

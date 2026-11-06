@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Amazon EBSとは？意味と覚え方｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル</title>
-<meta name="description" content="Amazon EBS（テクノロジーとサービス・ストレージ）: EC2 につないで使うブロックストレージ（ディスク）。EC2 を止めてもデータは残る。スナップショットでバックアップできる。">
+<meta name="description" content="Amazon EBS（テクノロジーとサービス・ストレージ）: EC2 につないで使うブロックストレージ（ディスク）。EC2 を止めてもデータは残る。スナップショットでバックアップできる。【覚え方】EBS は Elastic Block S…">
 <link rel="canonical" href="https://cloud.yogo-drill.com/terms/0165.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Amazon EBSとは？意味と覚え方｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル">
-<meta property="og:description" content="Amazon EBS（テクノロジーとサービス・ストレージ）: EC2 につないで使うブロックストレージ（ディスク）。EC2 を止めてもデータは残る。スナップショットでバックアップできる。">
+<meta property="og:description" content="Amazon EBS（テクノロジーとサービス・ストレージ）: EC2 につないで使うブロックストレージ（ディスク）。EC2 を止めてもデータは残る。スナップショットでバックアップできる。【覚え方】EBS は Elastic Block S…">
 <meta property="og:url" content="https://cloud.yogo-drill.com/terms/0165.html">
 <meta property="og:site_name" content="クラウド用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../abbr.html">略語クイズに挑戦</a>
       </div>
+      <section class="detail"><h2>覚え方</h2><p>EBS は Elastic Block Store。「EC2 につなぐ外付けのディスク」と覚えます。EC2 を止めてもデータは残り、スナップショットでバックアップできます。</p></section><section class="detail"><h2>試験での出され方</h2><p>「EC2 インスタンスのブート用のディスクや、データベースのディスクに使うストレージ」として出ます。インスタンスストアとの違い（止めるとデータが消えるかどうか）もよく問われます。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0166.html">インスタンスストア</a>との違い</dt><dd>インスタンスストアは、EC2 の機器に直接ついた一時的なディスク。インスタンスを止めるとデータが消える。EBS は止めても残る。</dd><dt><a href="0168.html">Amazon EFS</a>との違い</dt><dd>Amazon EFS は、複数の EC2 から同時に使えるファイルストレージ。EBS は、基本は1台の EC2 につないで使う。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="3" data-term="EBS スナップショット" data-href="0167.html">
     <h2>確認問題</h2>
@@ -71,6 +72,7 @@
         <h2>同じ分野の用語</h2>
         <ul class="related"><li><a href="0164.html">S3 ライフサイクルポリシー</a><p>日数などの決まりに合わせて、S3 のデータを安いクラスへ自動で移したり、消したりする設定。</p></li><li><a href="0166.html">インスタンスストア</a><p>EC2 の機器に直接ついている一時的なディスク。速いが、インスタンスを止めるとデータが消える。</p></li><li><a href="0163.html">S3 Glacier Deep Archive</a><p>S3 でいちばん安いストレージクラス。取り出しには時間がかかる。何年も保存しておく記録向け。</p></li><li><a href="0167.html">EBS スナップショット</a><p>EBS のある時点の状態を保存したバックアップ。</p></li><li><a href="0162.html">Amazon S3 Glacier</a><p>長く保存しておく（アーカイブ）データ向けの、とても安い S3 のストレージクラスの仲間。Instant Retrieval・Flexible Retrieval・Deep Archive があり、取り出しの速さと料金が違う。</p></li><li><a href="0168.html">Amazon EFS</a><p>複数の EC2 から同時に使える、容量が自動で増えるファイルストレージ。</p></li></ul>
       </section>
+      <section class="side-card"><h2>比べて覚える</h2><ul class="b-links"><li><a href="../compare/s3-ebs-efs.html">S3とEBSとEFSの違い</a></li></ul></section>
     </aside>
   </div>
 </div>

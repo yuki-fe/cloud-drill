@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Savings Plansとは？意味と覚え方｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル</title>
-<meta name="description" content="Savings Plans（請求・料金・サポート・料金モデル）: 1年か3年、1時間あたりの利用額を約束することで割引される料金のプラン。インスタンスのタイプを変えても当てはまり、Lambda や Fargate にも使える種類がある。">
+<meta name="description" content="Savings Plans（請求・料金・サポート・料金モデル）: 1年か3年、1時間あたりの利用額を約束することで割引される料金のプラン。インスタンスのタイプを変えても当てはまり、Lambda や Fargate にも使える種類がある。【…">
 <link rel="canonical" href="https://cloud.yogo-drill.com/terms/0217.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Savings Plansとは？意味と覚え方｜AWS 認定クラウドプラクティショナーの用語｜クラウド用語ドリル">
-<meta property="og:description" content="Savings Plans（請求・料金・サポート・料金モデル）: 1年か3年、1時間あたりの利用額を約束することで割引される料金のプラン。インスタンスのタイプを変えても当てはまり、Lambda や Fargate にも使える種類がある。">
+<meta property="og:description" content="Savings Plans（請求・料金・サポート・料金モデル）: 1年か3年、1時間あたりの利用額を約束することで割引される料金のプラン。インスタンスのタイプを変えても当てはまり、Lambda や Fargate にも使える種類がある。【…">
 <meta property="og:url" content="https://cloud.yogo-drill.com/terms/0217.html">
 <meta property="og:site_name" content="クラウド用語ドリル">
 <meta name="twitter:card" content="summary">
@@ -48,6 +48,7 @@
         <a class="btn primary" href="../index.html#card"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>カードで練習</a>
         <a class="btn" href="../index.html#type">書いて答える問題に挑戦</a>
       </div>
+      <section class="detail"><h2>覚え方</h2><p>「1時間にこれだけ使います」と金額で約束する割引の仕組みと覚えます。インスタンスの種類を変えても割引が当たる、柔軟な定期券のようなものです。</p></section><section class="detail"><h2>試験での出され方</h2><p>「EC2 だけでなく Lambda や Fargate の費用も、約束をして下げたい」「インスタンスファミリーを変えても割引を受けたい」という場面で選ぶ答えとして出ます。</p></section><section class="detail"><h2>似た用語との違い</h2><dl class="diff-list"><dt><a href="0214.html">リザーブドインスタンス（RI）</a>との違い</dt><dd>リザーブドインスタンスは、インスタンスの種類などを決めて約束する。Savings Plans は、1時間あたりの利用額で約束する。</dd><dt><a href="0216.html">スポットインスタンス</a>との違い</dt><dd>スポットインスタンスは約束がいらず安いが、中断されることがある。Savings Plans は約束をして割引を受ける。</dd></dl></section>
       
   <section class="mini-quiz" data-answer="1" data-term="リザーブドインスタンスの柔軟性" data-href="0215.html">
     <h2>確認問題</h2>
@@ -71,6 +72,7 @@
         <h2>同じ分野の用語</h2>
         <ul class="related"><li><a href="0216.html">スポットインスタンス</a><p>AWS の余っている EC2 を、大きな割引で使える買い方。AWS が必要になると中断されることがあるので、止まってもよい処理に向く。</p></li><li><a href="0218.html">Dedicated Instances</a><p>ほかの利用者と共有しない、専用のハードウェアの上で動く EC2 のインスタンス。ハードウェア専有インスタンスとも呼ぶ。</p></li><li><a href="0215.html">リザーブドインスタンスの柔軟性</a><p>スタンダードとコンバーティブルがあり、コンバーティブルは期間の途中でインスタンスのタイプを変えられる。リージョン単位のリザーブドインスタンスは、同じファミリーの別の大きさにも割引が当たる。</p></li><li><a href="0219.html">Dedicated Hosts</a><p>物理サーバー1台を、まるごと自分専用にする仕組み。サーバー単位のソフトウェアのライセンス（BYOL）を使いたいときに向く。</p></li><li><a href="0214.html">リザーブドインスタンス（RI）</a><p>1年か3年の利用を約束することで、オンデマンドより大きく割引される EC2 などの買い方。ずっと動かしておくシステムに向く。</p></li><li><a href="0220.html">オンデマンドキャパシティ予約</a><p>特定のアベイラビリティーゾーンで、EC2 を必要なときに確実に起動できるよう、容量を前もって確保する仕組み。期間の約束はいらないが、使わなくても料金がかかる。</p></li></ul>
       </section>
+      <section class="side-card"><h2>比べて覚える</h2><ul class="b-links"><li><a href="../compare/ec2-pricing-models.html">オンデマンドとリザーブドインスタンスとスポットインスタンスと Savings Plans の違い</a></li></ul></section>
     </aside>
   </div>
 </div>
